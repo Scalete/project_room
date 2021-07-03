@@ -1,0 +1,30 @@
+.promo {
+    padding-top: 49px;
+    &__img {
+        display: block;
+        margin: 0 auto; 
+    }
+    &__text-wrapper {
+        margin: 0 auto;
+        padding: 82px 85px 0 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            width: 355px;
+        }
+        h2 {
+            width: 569px;
+            margin-left: 136px;
+        }
+    }
+    &__image-wrapper {
+        padding-top: 211px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 32px 24px;
+        .title {
+            padding-top: 9px;
+        }
+    }
+}

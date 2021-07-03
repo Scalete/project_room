@@ -1,0 +1,21 @@
+.supheader {
+    min-height: 40px;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 33px;
+    &__wrapper {
+        width: 318px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #AAAAAA;
+    }
+}
