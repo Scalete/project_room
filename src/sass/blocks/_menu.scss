@@ -1,0 +1,21 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    &_width414 {
+        width: 414px;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #000000;
+        
+        &:hover {
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+}
