@@ -7,6 +7,33 @@
             width: 310px;
         }
     }
+    .promo {
+        &__item {
+            margin: 0 154px;
+        }
+        &__image-wrapper {
+            padding-top: 110px;
+        }
+        &__text-wrapper {
+            margin: 0 auto;
+            padding: 70px 0 0 0;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .title {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .subtitle {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+
+    }
 }
 
 @media (max-width: 992px) {
@@ -16,6 +43,19 @@
     .header {
         &__wrapper {
             padding: 40px 20px 0 20px;
+        }
+    }
+    .promo {
+        &__item {
+            margin: 0 100px;
+        }
+        &__text-wrapper {
+            .title {
+                font-size: 36px;
+            }
+            .subtitle {
+                font-size: 20px;
+            }
         }
     }
 }
@@ -33,12 +73,28 @@
             width: unset;
         }
     }
+    .promo {
+        &__text-wrapper {
+            padding-top: 45px;
+        }
+        &__image-wrapper {
+            padding-top: 54px;
+        }
+        .title {
+            &_fz24 {
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
-    .container {
-        width: 100%;
+    .container{
+        max-width: 100%;
         padding: 0 10px;
+        &_width1200 {
+            max-width: unset;
+        }
     }
     .header {
         &__cart {
@@ -46,6 +102,9 @@
         }
         &__link {
             margin: 0 auto;
+        }
+        &__wrapper {
+            padding-top: 20px;
         }
         .hamburger {
             display: block;
@@ -112,4 +171,33 @@
         }
     }
     
+    .promo {
+        padding-top: 26px;
+        &__item {
+            margin: 0 10px;
+        }
+        &__image-wrapper {
+            padding-top: 31px;
+            grid-template-columns: auto;
+            row-gap: 15px;
+            .title {
+                padding-top: 0;
+                &_fz24 {
+                    font-size: 18px;
+                }
+            }
+        }
+        &__text-wrapper {
+            padding-top: 22px;
+            .title {
+                font-size: 24px;
+                line-height: 31px;
+            }
+            .subtitle {
+                font-size: 15px;
+                line-height: 26px;
+                margin-top: 8px;
+            }
+        }
+    }
 }
