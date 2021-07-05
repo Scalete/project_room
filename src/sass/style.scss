@@ -1,7 +1,7 @@
 @import 'libs/bootstrap-reboot.min';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-h1, h2 {
+h1, h2, h3 {
     margin: 0;
     margin-block: unset;
     margin-inline: unset;
@@ -12,6 +12,7 @@ h1, h2 {
 @import 'blocks/menu';
 @import 'blocks/header';
 @import 'blocks/promo';
+@import 'blocks/logos';
 
 @import 'blocks/media';
 
@@ -23,9 +24,6 @@ h1, h2 {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
-    &_width1200 {
-        max-width: 1200px;
-    }
 }

@@ -1,0 +1,27 @@
+.logos {
+    padding-top: 247px;
+    .container {
+        max-width: 1144px;
+    }
+    &__title {
+        text-align: center;
+        line-height: 48px;   
+    }
+    &__subtitle {
+        line-height: 36px;
+        text-align: center;
+        color: #4A4A4A;
+        &_mt27 {
+            margin-top: 27px;
+        }
+    }
+    &__wrapper {
+        margin: 0 auto;
+        padding-top: 125px;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-auto-columns: auto;
+        justify-items: center;
+        row-gap: 49px;
+    }
+}
