@@ -26,4 +26,23 @@ window.addEventListener('DOMContentLoaded', () => {
         img.classList.add('logos__icon');
         logosParent.append(img);
     }
+
+    $(document).ready(function () {
+        $('.slider__wrapper').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            fade: true,
+            prevArrow: '<button type="button" class="slick-prev"><img src="../icons/arrows/left.svg"></button>',
+            nextArrow: '<button type="button" class="slick-next"><img src="../icons/arrows/right.svg"></button>',
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                }
+            }, ]
+        });
+    });
 })

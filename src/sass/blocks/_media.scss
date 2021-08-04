@@ -34,6 +34,16 @@
         }
 
     }
+    .slider {
+        padding-top: 100px;
+        &__slide {
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -108,6 +118,13 @@
         &__wrapper {
             padding-top: 38px;
             grid-template-columns: repeat(3, auto);
+        }
+    }
+    .slider {
+        padding: 0 auto;
+        padding-top: 40px;
+        img {
+            width: 100%;
         }
     }
 }
