@@ -1,0 +1,38 @@
+.business {
+    padding-top: 240px;
+    &__suptitle {
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 52px;
+        color: #AAAAAA;
+    }
+    &__title {
+        font-size: 46px;
+        line-height: 52px;
+        color: #000000;
+        &-wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 64px;
+        margin-top: 135px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-title {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        &-subtitle {
+            max-width: 311px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
