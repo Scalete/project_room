@@ -8,6 +8,14 @@ h1, h2, h3, h4 {
     margin-inline: unset;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    &_width1090 {
+        max-width: 1090px;
+    }
+}
+
 @import 'blocks/title';
 @import 'blocks/supheader';
 @import 'blocks/menu';
@@ -16,14 +24,7 @@ h1, h2, h3, h4 {
 @import 'blocks/logos';
 @import 'blocks/slider';
 @import 'blocks/functions';
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    &_width1090 {
-        max-width: 1090px;
-    }
-}
+@import 'blocks/reviews';
 
 @import 'blocks/media';
 
