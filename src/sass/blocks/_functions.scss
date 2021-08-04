@@ -1,0 +1,38 @@
+.functions {
+    padding-top: 119px;
+
+    &__comunication {
+        margin-top: 24px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 12px;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        color: #46856E;
+    }
+
+    &__items {
+        margin-top: 71px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__item {
+        max-width: 323px;
+        &-img {
+            display: block;
+            margin: 0 auto;
+        }
+        &-title {
+            margin-top: 26px;
+            font-size: 24px;
+            line-height: 24px;
+        }
+        &-subtitle {
+            margin-top: 18px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

@@ -2,7 +2,7 @@
 @import 'libs/slick';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin: 0;
     margin-block: unset;
     margin-inline: unset;
@@ -15,6 +15,15 @@ h1, h2, h3 {
 @import 'blocks/promo';
 @import 'blocks/logos';
 @import 'blocks/slider';
+@import 'blocks/functions';
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    &_width1090 {
+        max-width: 1090px;
+    }
+}
 
 @import 'blocks/media';
 
@@ -25,7 +34,3 @@ h1, h2, h3 {
     scroll-behavior: smooth;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
