@@ -27,6 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
         logosParent.append(img);
     }
 
+    //slider
+
     $(document).ready(function () {
         $('.slider__wrapper').slick({
             dots: true,
@@ -45,4 +47,22 @@ window.addEventListener('DOMContentLoaded', () => {
             }, ]
         });
     });
+    $(document).ready(function () {
+        $('.slider__wrapper-footer').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            fade: true,
+            arrows: false,
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                }
+            }, ]
+        });
+    });
+    
 })
