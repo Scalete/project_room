@@ -1,0 +1,169 @@
+.footer {
+    position: relative;
+    margin-top: 79px;
+    padding: 97px 0 71px 0;
+    background: #2B2B2B;
+    box-shadow: 0px 400px 0px #2B2B2B;
+    border-radius: 0px;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &-logo__link {
+        margin-left: 55px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 170px);
+        row-gap: 20px;
+    }
+    &__link {
+        display: block;
+        padding-bottom: 4px;
+        &:last-child {
+            padding-bottom: 0;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+        &-title, &-item {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+            &_small {
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+    }
+    &__socials {
+        &-title {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+        }
+        &-wrapper {
+            width: 119px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__form {
+        padding-right: 13px;
+        display: flex;
+        flex-direction: column;;
+        &-title {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 21px;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+            span {
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: unset;
+            }
+        }
+        &-textarea {
+            padding: 10px 0 0 10px;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            margin-top: 30px;
+            width: 327px;
+            max-height: 54px;
+            resize: none;
+            outline: none;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 3px;
+            color: #FFFFFF;
+        }
+        &-cities {
+            margin-right: 45px;
+            margin-top: 16px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: right;
+        }
+        &-block {
+            margin-top: 56px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &-terms {
+            text-indent: 1em;
+            position: relative;
+            max-width: 369px;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+
+            &:before {
+                content: " ";
+                color: #fff;
+                display: inline-block;
+                font: 20px/30px Arial;
+                position: absolute;
+                text-align: center;
+                text-indent: 0px;
+                width: 28px;
+                height: 26px;
+                background: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                left: -50px;
+            }
+        }
+        &-checkbox {
+            display: none;
+            &:checked + .footer__form-terms:before {
+                content: "x";
+            }
+        }
+        &-btn {
+            margin-top: 34px;
+            margin-right: 36px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 60px;
+            letter-spacing: 2.3px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background-color: transparent;
+            border: none;
+            &:focus {
+                outline: none;
+            }
+            align-self: flex-end;
+        }
+    }
+    &__sidepanel {
+        position: absolute;
+        transform: rotate(-90deg);
+        right: -44px;
+        bottom: 126px;
+        a {
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
